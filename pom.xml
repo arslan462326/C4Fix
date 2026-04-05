@@ -3,16 +3,21 @@
          xmlns:xsi="http://w3.org"
          xsi:schemaLocation="http://apache.org http://apache.org">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>ru.yourname</groupId>
     <artifactId>C4Fix</artifactId>
     <version>1.0</version>
+
     <repositories>
+        <!-- Официальный репозиторий Paper -->
         <repository>
-            <id>papermc</id>
+            <id>papermc-repo</id>
             <url>https://papermc.io</url>
         </repository>
     </repositories>
+
     <dependencies>
+        <!-- Используем версию Dev-Bundle, она скачивается без ошибок -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
@@ -20,6 +25,7 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
