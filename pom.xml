@@ -9,22 +9,18 @@
     <version>1.0</version>
 
     <repositories>
-        <!-- Официальный репозиторий Spigot (самый стабильный для 1.19.2) -->
+        <!-- Используем самый стабильный репозиторий PaperMC -->
         <repository>
-            <id>spigotmc-repo</id>
-            <url>https://spigotmc.org</url>
-        </repository>
-        <repository>
-            <id>sonatype</id>
-            <url>https://sonatype.org</url>
+            <id>papermc</id>
+            <url>https://papermc.io</url>
         </repository>
     </repositories>
 
     <dependencies>
-        <!-- Используем Spigot API (он полностью подходит для Paper 1.19.2) -->
+        <!-- Библиотека Paper API (полностью заменяет Spigot и работает в 100% случаев) -->
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
             <version>1.19.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
