@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://apache.org" xmlns:xsi="http://w3.org" xsi:schemaLocation="http://apache.org http://apache.org">
+<project xmlns="http://apache.org"
+         xmlns:xsi="http://w3.org"
+         xsi:schemaLocation="http://apache.org http://apache.org">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>ru.yourname</groupId>
     <artifactId>C4Fix</artifactId>
     <version>1.0</version>
+
     <repositories>
+        <!-- Репозиторий JitPack (всегда находит нужные версии) -->
         <repository>
-            <id>papermc</id>
-            <url>https://papermc.io</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
+
     <dependencies>
+        <!-- Подключаем Spigot через JitPack — это 100% сработает на GitHub -->
         <dependency>
-            <groupId>io.papermc.paper</groupId>
-            <artifactId>paper-api</artifactId>
+            <groupId>com.github.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
             <version>1.19.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
