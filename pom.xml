@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://apache.org"
-         xmlns:xsi="http://w3.org"
-         xsi:schemaLocation="http://apache.org http://apache.org">
+<project xmlns="http://apache.org" xmlns:xsi="http://w3.org" xsi:schemaLocation="http://apache.org http://apache.org">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>ru.yourname</groupId>
     <artifactId>C4Fix</artifactId>
     <version>1.0</version>
-
     <repositories>
-        <!-- Стабильный репозиторий, который всегда работает -->
         <repository>
-            <id>codemc-repo</id>
-            <url>https://codemc.io</url>
-        </repository>
-        <repository>
-            <id>spigotmc-repo</id>
-            <url>https://spigotmc.org</url>
+            <id>papermc</id>
+            <url>https://papermc.io</url>
         </repository>
     </repositories>
-
     <dependencies>
-        <!-- Используем Spigot API (он на 100% подходит для твоего Paper сервера) -->
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
             <version>1.19.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -39,6 +27,7 @@
                 <configuration>
                     <source>17</source>
                     <target>17</target>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
         </plugins>
