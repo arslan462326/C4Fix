@@ -9,19 +9,15 @@
     <version>1.0</version>
 
     <repositories>
-        <!-- Официальный репозиторий Spigot (самый надежный) -->
+        <!-- Этот репозиторий работает всегда и очень быстро -->
         <repository>
-            <id>spigotmc-repo</id>
-            <url>https://spigotmc.org</url>
-        </repository>
-        <repository>
-            <id>sonatype</id>
-            <url>https://sonatype.org</url>
+            <id>codemc-repo</id>
+            <url>https://codemc.io</url>
         </repository>
     </repositories>
 
     <dependencies>
-        <!-- Используем Spigot API для версии 1.19.2 -->
+        <!-- Spigot API через CodeMC -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
