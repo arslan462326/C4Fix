@@ -1,0 +1,4 @@
+name: C4Fix
+version: 1.0
+main: ru.yourname.c4fix.Main
+api-version: 1.19
