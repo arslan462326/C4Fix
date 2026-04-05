@@ -9,18 +9,18 @@
     <version>1.0</version>
 
     <repositories>
-        <!-- Репозиторий JitPack (всегда находит нужные версии) -->
+        <!-- Официальный репозиторий Paper (лучший для 1.19.2) -->
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
+            <id>papermc</id>
+            <url>https://papermc.io</url>
         </repository>
     </repositories>
 
     <dependencies>
-        <!-- Подключаем Spigot через JitPack -->
+        <!-- Библиотека Paper API -->
         <dependency>
-            <groupId>com.github.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
             <version>1.19.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
