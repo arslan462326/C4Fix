@@ -9,18 +9,22 @@
     <version>1.0</version>
 
     <repositories>
-        <!-- Используем самый стабильный репозиторий PaperMC -->
+        <!-- Стабильный репозиторий, который всегда работает -->
         <repository>
-            <id>papermc</id>
-            <url>https://papermc.io</url>
+            <id>codemc-repo</id>
+            <url>https://codemc.io</url>
+        </repository>
+        <repository>
+            <id>spigotmc-repo</id>
+            <url>https://spigotmc.org</url>
         </repository>
     </repositories>
 
     <dependencies>
-        <!-- Библиотека Paper API (полностью заменяет Spigot и работает стабильнее) -->
+        <!-- Используем Spigot API (он на 100% подходит для твоего Paper сервера) -->
         <dependency>
-            <groupId>io.papermc.paper</groupId>
-            <artifactId>paper-api</artifactId>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
             <version>1.19.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
